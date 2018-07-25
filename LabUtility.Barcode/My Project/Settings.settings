@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=c:\myFolder\myExcel2007file.xlsx;Extended Properties="Excel 12.0 Xml;HDR=YES;IMEX=1"</Value>
+    </Setting>
+    <Setting Name="FileLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\myFolder\myExcel2007file.xlsx</Value>
+    </Setting>
+    <Setting Name="DataProvider" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Microsoft.ACE.OLEDB.12.0</Value>
+    </Setting>
+    <Setting Name="ExtendedProperties" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Excel 12.0 Xml;HDR=YES;IMEX=1</Value>
+    </Setting>
+    <Setting Name="HdrFirstRowColumnNames" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Yes</Value>
+    </Setting>
+    <Setting Name="ImexReadAllAsText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Yes</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
