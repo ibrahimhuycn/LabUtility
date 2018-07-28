@@ -54,19 +54,22 @@ Namespace My
             End Get
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=c:\myFolder\myExcel2007file.xlsx;Ex"& _ 
             "tended Properties=""Excel 12.0 Xml;HDR=YES;IMEX=1""")>  _
-        Public ReadOnly Property ConnectionString() As String
+        Public Property ConnectionString() As String
             Get
                 Return CType(Me("ConnectionString"),String)
             End Get
+            Set
+                Me("ConnectionString") = value
+            End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("c:\myFolder\myExcel2007file.xlsx")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\myFolder\myExcel2007file.xlsx")>  _
         Public Property FileLocation() As String
             Get
                 Return CType(Me("FileLocation"),String)
@@ -88,18 +91,21 @@ Namespace My
             End Set
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Excel 12.0 Xml;HDR=YES;IMEX=1")>  _
-        Public ReadOnly Property ExtendedProperties() As String
+        Public Property ExtendedProperties() As String
             Get
                 Return CType(Me("ExtendedProperties"),String)
             End Get
+            Set
+                Me("ExtendedProperties") = value
+            End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Yes")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
         Public Property HdrFirstRowColumnNames() As String
             Get
                 Return CType(Me("HdrFirstRowColumnNames"),String)
@@ -111,13 +117,37 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Yes")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
         Public Property ImexReadAllAsText() As String
             Get
                 Return CType(Me("ImexReadAllAsText"),String)
             End Get
             Set
                 Me("ImexReadAllAsText") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Microsoft.ACE.OLEDB.12.0|DataProviderDriverName")>  _
+        Public Property DataProviderList() As String
+            Get
+                Return CType(Me("DataProviderList"),String)
+            End Get
+            Set
+                Me("DataProviderList") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
+        Public Property ExcelDataSourceActive() As String
+            Get
+                Return CType(Me("ExcelDataSourceActive"),String)
+            End Get
+            Set
+                Me("ExcelDataSourceActive") = value
             End Set
         End Property
     End Class

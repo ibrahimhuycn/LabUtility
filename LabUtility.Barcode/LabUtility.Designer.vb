@@ -30,11 +30,11 @@ Partial Class LabUtility
         '
         'ToolStripLabUtility
         '
-        Me.ToolStripLabUtility.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.ToolStripLabUtility.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButtonSettings})
-        Me.ToolStripLabUtility.Location = New System.Drawing.Point(0, 154)
+        Me.ToolStripLabUtility.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripLabUtility.Name = "ToolStripLabUtility"
-        Me.ToolStripLabUtility.Size = New System.Drawing.Size(422, 25)
+        Me.ToolStripLabUtility.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.ToolStripLabUtility.Size = New System.Drawing.Size(705, 25)
         Me.ToolStripLabUtility.TabIndex = 0
         Me.ToolStripLabUtility.Text = "ToolStrip1"
         '
@@ -52,7 +52,7 @@ Partial Class LabUtility
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(422, 179)
+        Me.ClientSize = New System.Drawing.Size(705, 343)
         Me.Controls.Add(Me.ToolStripLabUtility)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
