@@ -31,11 +31,11 @@ Partial Class Settings
         Me.CheckBoxIMEX = New System.Windows.Forms.CheckBox()
         Me.CheckBoxIsHDR = New System.Windows.Forms.CheckBox()
         Me.ButtonBrowse = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LabelProvider = New System.Windows.Forms.Label()
         Me.ComboBoxProvider = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LabelFileLocation = New System.Windows.Forms.Label()
         Me.TextBoxFileLocation = New System.Windows.Forms.TextBox()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TabPageMsAccessConnection = New System.Windows.Forms.TabPage()
         Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
         Me.TabControlConnectionSettings.SuspendLayout()
         Me.TabPageExcel.SuspendLayout()
@@ -45,7 +45,7 @@ Partial Class Settings
         'TabControlConnectionSettings
         '
         Me.TabControlConnectionSettings.Controls.Add(Me.TabPageExcel)
-        Me.TabControlConnectionSettings.Controls.Add(Me.TabPage2)
+        Me.TabControlConnectionSettings.Controls.Add(Me.TabPageMsAccessConnection)
         Me.TabControlConnectionSettings.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControlConnectionSettings.Font = New System.Drawing.Font("Cambria", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControlConnectionSettings.Location = New System.Drawing.Point(0, 0)
@@ -62,9 +62,9 @@ Partial Class Settings
         Me.TabPageExcel.Controls.Add(Me.CheckBoxIMEX)
         Me.TabPageExcel.Controls.Add(Me.CheckBoxIsHDR)
         Me.TabPageExcel.Controls.Add(Me.ButtonBrowse)
-        Me.TabPageExcel.Controls.Add(Me.Label2)
+        Me.TabPageExcel.Controls.Add(Me.LabelProvider)
         Me.TabPageExcel.Controls.Add(Me.ComboBoxProvider)
-        Me.TabPageExcel.Controls.Add(Me.Label1)
+        Me.TabPageExcel.Controls.Add(Me.LabelFileLocation)
         Me.TabPageExcel.Controls.Add(Me.TextBoxFileLocation)
         Me.TabPageExcel.Font = New System.Drawing.Font("Cambria", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPageExcel.Location = New System.Drawing.Point(4, 23)
@@ -144,15 +144,15 @@ Partial Class Settings
         Me.ButtonBrowse.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ButtonBrowse.UseVisualStyleBackColor = False
         '
-        'Label2
+        'LabelProvider
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Cambria", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(24, 35)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(55, 14)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Provider:"
+        Me.LabelProvider.AutoSize = True
+        Me.LabelProvider.Font = New System.Drawing.Font("Cambria", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelProvider.Location = New System.Drawing.Point(24, 35)
+        Me.LabelProvider.Name = "LabelProvider"
+        Me.LabelProvider.Size = New System.Drawing.Size(55, 14)
+        Me.LabelProvider.TabIndex = 11
+        Me.LabelProvider.Text = "Provider:"
         '
         'ComboBoxProvider
         '
@@ -162,15 +162,15 @@ Partial Class Settings
         Me.ComboBoxProvider.Size = New System.Drawing.Size(302, 22)
         Me.ComboBoxProvider.TabIndex = 10
         '
-        'Label1
+        'LabelFileLocation
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Cambria", 9.0!)
-        Me.Label1.Location = New System.Drawing.Point(5, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 14)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "File Location:"
+        Me.LabelFileLocation.AutoSize = True
+        Me.LabelFileLocation.Font = New System.Drawing.Font("Cambria", 9.0!)
+        Me.LabelFileLocation.Location = New System.Drawing.Point(5, 9)
+        Me.LabelFileLocation.Name = "LabelFileLocation"
+        Me.LabelFileLocation.Size = New System.Drawing.Size(74, 14)
+        Me.LabelFileLocation.TabIndex = 9
+        Me.LabelFileLocation.Text = "File Location:"
         '
         'TextBoxFileLocation
         '
@@ -179,21 +179,22 @@ Partial Class Settings
         Me.TextBoxFileLocation.Size = New System.Drawing.Size(230, 22)
         Me.TextBoxFileLocation.TabIndex = 8
         '
-        'TabPage2
+        'TabPageMsAccessConnection
         '
-        Me.TabPage2.Location = New System.Drawing.Point(4, 23)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(399, 112)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "MS Access Connection"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.TabPageMsAccessConnection.Location = New System.Drawing.Point(4, 23)
+        Me.TabPageMsAccessConnection.Name = "TabPageMsAccessConnection"
+        Me.TabPageMsAccessConnection.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageMsAccessConnection.Size = New System.Drawing.Size(399, 112)
+        Me.TabPageMsAccessConnection.TabIndex = 1
+        Me.TabPageMsAccessConnection.Text = "MS Access Connection"
+        Me.TabPageMsAccessConnection.UseVisualStyleBackColor = True
         '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(407, 139)
+        Me.ControlBox = False
         Me.Controls.Add(Me.TabControlConnectionSettings)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Settings"
@@ -213,11 +214,11 @@ Partial Class Settings
     Friend WithEvents CheckBoxIMEX As CheckBox
     Friend WithEvents CheckBoxIsHDR As CheckBox
     Friend WithEvents ButtonBrowse As Button
-    Friend WithEvents Label2 As Label
+    Friend WithEvents LabelProvider As Label
     Friend WithEvents ComboBoxProvider As ComboBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents LabelFileLocation As Label
     Friend WithEvents TextBoxFileLocation As TextBox
-    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents TabPageMsAccessConnection As TabPage
     Friend WithEvents ButtonSave As Button
     Friend WithEvents OpenFileDialog As OpenFileDialog
 End Class

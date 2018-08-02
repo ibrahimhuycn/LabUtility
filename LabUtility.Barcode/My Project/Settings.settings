@@ -23,8 +23,11 @@
     <Setting Name="DataProviderList" Type="System.String" Scope="User">
       <Value Profile="(Default)">Microsoft.ACE.OLEDB.12.0|DataProviderDriverName</Value>
     </Setting>
-    <Setting Name="ExcelDataSourceActive" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1</Value>
+    <Setting Name="ExcelMapping" Type="System.String" Scope="User">
+      <Value Profile="(Default)">id|Name|Collection Date|Sample type</Value>
+    </Setting>
+    <Setting Name="ConnectionInUse" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

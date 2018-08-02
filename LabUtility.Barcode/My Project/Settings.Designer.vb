@@ -141,13 +141,25 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
-        Public Property ExcelDataSourceActive() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("id|Name|Collection Date|Sample type")>  _
+        Public Property ExcelMapping() As String
             Get
-                Return CType(Me("ExcelDataSourceActive"),String)
+                Return CType(Me("ExcelMapping"),String)
             End Get
             Set
-                Me("ExcelDataSourceActive") = value
+                Me("ExcelMapping") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property ConnectionInUse() As String
+            Get
+                Return CType(Me("ConnectionInUse"),String)
+            End Get
+            Set
+                Me("ConnectionInUse") = value
             End Set
         End Property
     End Class
