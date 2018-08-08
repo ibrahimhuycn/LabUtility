@@ -56,86 +56,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=c:\myFolder\myExcel2007file.xlsx;Ex"& _ 
-            "tended Properties=""Excel 12.0 Xml;HDR=YES;IMEX=1""")>  _
-        Public Property ConnectionString() As String
-            Get
-                Return CType(Me("ConnectionString"),String)
-            End Get
-            Set
-                Me("ConnectionString") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\myFolder\myExcel2007file.xlsx")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("E:\Ibrahim\OneDrive\Documents\Mustho\TestData.xlsx")>  _
         Public Property FileLocation() As String
             Get
                 Return CType(Me("FileLocation"),String)
             End Get
             Set
                 Me("FileLocation") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Microsoft.ACE.OLEDB.12.0")>  _
-        Public Property DataProvider() As String
-            Get
-                Return CType(Me("DataProvider"),String)
-            End Get
-            Set
-                Me("DataProvider") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Excel 12.0 Xml;HDR=YES;IMEX=1")>  _
-        Public Property ExtendedProperties() As String
-            Get
-                Return CType(Me("ExtendedProperties"),String)
-            End Get
-            Set
-                Me("ExtendedProperties") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
-        Public Property HdrFirstRowColumnNames() As String
-            Get
-                Return CType(Me("HdrFirstRowColumnNames"),String)
-            End Get
-            Set
-                Me("HdrFirstRowColumnNames") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
-        Public Property ImexReadAllAsText() As String
-            Get
-                Return CType(Me("ImexReadAllAsText"),String)
-            End Get
-            Set
-                Me("ImexReadAllAsText") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Microsoft.ACE.OLEDB.12.0|DataProviderDriverName")>  _
-        Public Property DataProviderList() As String
-            Get
-                Return CType(Me("DataProviderList"),String)
-            End Get
-            Set
-                Me("DataProviderList") = value
             End Set
         End Property
         
@@ -153,13 +80,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property ConnectionInUse() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("Sheet1")>  _
+        Public Property ExcelTableName() As String
             Get
-                Return CType(Me("ConnectionInUse"),String)
+                Return CType(Me("ExcelTableName"),String)
             End Get
             Set
-                Me("ConnectionInUse") = value
+                Me("ExcelTableName") = value
             End Set
         End Property
     End Class

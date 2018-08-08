@@ -2,32 +2,14 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
-    <Setting Name="ConnectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=c:\myFolder\myExcel2007file.xlsx;Extended Properties="Excel 12.0 Xml;HDR=YES;IMEX=1"</Value>
-    </Setting>
     <Setting Name="FileLocation" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\myFolder\myExcel2007file.xlsx</Value>
-    </Setting>
-    <Setting Name="DataProvider" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Microsoft.ACE.OLEDB.12.0</Value>
-    </Setting>
-    <Setting Name="ExtendedProperties" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Excel 12.0 Xml;HDR=YES;IMEX=1</Value>
-    </Setting>
-    <Setting Name="HdrFirstRowColumnNames" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1</Value>
-    </Setting>
-    <Setting Name="ImexReadAllAsText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1</Value>
-    </Setting>
-    <Setting Name="DataProviderList" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Microsoft.ACE.OLEDB.12.0|DataProviderDriverName</Value>
+      <Value Profile="(Default)">E:\Ibrahim\OneDrive\Documents\Mustho\TestData.xlsx</Value>
     </Setting>
     <Setting Name="ExcelMapping" Type="System.String" Scope="User">
       <Value Profile="(Default)">id|Name|Collection Date|Sample type</Value>
     </Setting>
-    <Setting Name="ConnectionInUse" Type="System.String" Scope="User">
-      <Value Profile="(Default)">0</Value>
+    <Setting Name="ExcelTableName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sheet1</Value>
     </Setting>
   </Settings>
 </SettingsFile>
